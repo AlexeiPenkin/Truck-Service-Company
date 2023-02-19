@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
+	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+</head>
+<body>
+		<!-- Начало: Данный блок удалять нельзя -->
+		<style>
+			.maketforfigma{
+				flex: 0 0 auto;
+				/*background: #303b44;*/
+				/*background: #5CDB95;*/
+				background: #313a46;
+				font-weight: bold;
+				display: flex;
+			}
+			.maketforfigma img{
+				border-radius: 10px;
+				margin: 4px 0 0 4px;
+			}
+			.maketforfigma p {
+				/*color: #fff;*/
+				/*color: #05386B;*/
+				color: #98a6ad;
+				text-decoration: none;
+				letter-spacing: .01875rem;
+				font-size: .775rem;
+				padding: 0 10px;
+				line-height: 0.70rem;
+			}
+
+			.maketforfigma p > a {
+				/*color: #08ff00;*/
+				/*color: #EDF5E1;*/
+				color: #bbe4f0;
+				font-weight: bold;
+			}
+			.maketforfigma p > a:hover {
+				/*color: #ffa001*/
+				/*color: #379683*/
+				color: #ffffff
+			}
+
+			.main{
+				flex: 1 0 auto;
+			}
+
+			html{
+				height: 100%;
+			}
+
+			body{
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+		<div class="maketforfigma">
+			<a href="https://t.me/s/FigmaToHTML" target="_blank">
+				<img src="logo.png">
+			</a>
+			<div>
+				<p>
+					Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML/2" target="_blank">FIGMA | Макеты для верстки</a>
+				</p>
+				<p>
+					При помощи бота <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">FIGMA | 💵 Верстай за деньги</a> пользователь получил оплату за верстку этого сайта и попал в рейтинги сайта
+					<a href="https://maketforfigma.ru" target="_blank">FIGMA — Макеты для верстки</a>
+				</p>
+			</div>
+		</div>
+		<!-- Конец -->
+
+		<div class="main">
+
+            <div class="top-line" id="top-line">
+
+                <div class="languages-select">
+                    <p class="language-select" active>РУС</p>
+                    <p class="language-select">ENG</p>
+                    <p class="language-select">FR</p>
+                </div>
+
+                <p class="top-line-phone">8 (800) 123-45-67</p>
+
+                <p class="top-line-email">sales@log.ru</p>
+
+            </div>
+
+            <header class="header" id="header">
+
+                <div class="header__container">
+
+                    <img src="./img/intro_logo.svg" alt="icon" class="header__logo">
+
+                    <img src="./img/header_divider-line.png" alt="icon" class="header__divider-line">
+
+                    <img src="./img/header_map-marker.png" alt="icon" class="header__map-marker">
+
+                    <a href="#map" class="header__span">Наши офисы</a>
+
+                    <div class="header__links">
+                            <a href="#intro" class="link">УСЛУГИ</a>
+
+                        <a href="#about" class="link">О КОМПАНИИ</a>
+
+                        <a href="#map" class="link">ВАКАНСИИ</a>
+
+                        <a href="#footer" class="link">КОНТАКТЫ</a>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <section class="intro" id="intro">
+
+                <div class="intro__container">
+                    <h1 class="intro__container-title">Грузовые перевозки</h1>
+
+                    <p class="intro__container-text">
+                        Перевозка крупногабаритных грузов по России и Европе. Полное экспедирование, страхование, упаковка и хранение грузов
+                    </p>
+                </div>
+
+                <img src="./img/intro_mouse-icon.svg" alt="icon" class="intro__mouse-icon">
+
+            </section>
+
+            <section class="geography" id="geography">
+
+                <div class="geography__info">
+                    <div class="geography__info-wrapper">
+                        <img src="./img/geography_info-line.png" alt="" class="geography__info-line">
+
+                        <h2 class="geography__info-heading">
+                            грузоперевозки
+                            по европе
+                        </h2>
+
+                        <p class="geography__info-text">
+                            Страны Евросоюза, а также Украина,
+                            Белоруссия со всеми документами.
+                        </p>
+
+                        <button class="geography__info-btn">подробнее</button>
+                    </div>
+                </div>
+
+                <img src="./img/geography_truck-img.png" alt="" class="geography__truck-img">
+
+                <div class="geography__slider">
+                    <div class="geography__slider-wrapper">
+                        <div class="geography__slider-next">
+                            <span class="slider-next-span">след</span>
+                            <img src="./img/geography_arrow-next.png" alt="" class="slider-next-img">
+                        </div>
+
+                        <div class="geography__slider-prev">
+                            <img src="./img/geography_arrow-prev.png" alt="" class="slider-prev-img">
+                            <span class="slider-prev-span">назад</span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="services" id="services">
+                <img src="./img/geography_info-line.png" alt="" class="services__line">
+                <h2 class="services__heading">Услуги</h2>
+                <div class="services__items">
+                    <div class="services__item">
+                        <img src="./img/services_airplane-black.svg" alt="icon" class="services__item-icon black">
+                        Авиаперевозки
+                    </div>
+
+                    <div class="services__item">
+                        <img src="./img/services_airplane-white.svg" alt="icon" class="services__item-icon">
+                        Авиаперевозки
+                    </div>
+
+                    <div class="services__item">
+                        <img src="./img/services_airplane-white.svg" alt="icon" class="services__item-icon">
+                        Авиаперевозки
+                    </div>
+
+                    <div class="services__item">
+                        <img src="./img/services_airplane-white.svg" alt="icon" class="services__item-icon">
+                        Авиаперевозки
+                    </div>
+
+                    <div class="services__item">
+                        <img src="./img/services_airplane-white.svg" alt="icon" class="services__item-icon">
+                        Авиаперевозки
+                    </div>
+
+                    <div class="services__item">
+                        <img src="./img/services_airplane-white.svg" alt="icon" class="services__item-icon">
+                        Авиаперевозки
+                    </div>
+
+                    <div class="services__item">
+                        <img src="./img/services_airplane-white.svg" alt="icon" class="services__item-icon">
+                        Авиаперевозки
+                    </div>
+
+                    <div class="services__item">
+                        <img src="./img/services_airplane-white.svg" alt="icon" class="services__item-icon">
+                        Авиаперевозки
+                    </div>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+
+                <div class="about__info">
+                    <img src="./img/geography_info-line.png" alt="" class="about__info-line">
+                    <h2 class="about__info-heading">О компании</h2>
+                    <p class="about__info-text">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+                    </p>
+                </div>
+
+                <img src="./img/about_background.png" alt="" class="about__background">
+
+                <div class="about__statistics">
+                    <div class="statistics__blocks">
+                        <div class="statistics__block">
+                            <p class="statistics__block-heading">48</p>
+                            <p class="statistics__block-text">офисов в</p>
+                            <p class="statistics__block-span">В Европе и СНГ</p>
+                        </div>
+                        <div class="statistics__block">
+                            <p class="statistics__block-heading">361</p>
+                            <p class="statistics__block-text">грузовиков</p>
+                            <p class="statistics__block-span">Volvo, Scania</p>
+                        </div>
+                        <img src="./img/about_truck-img.png" alt="" class="statistics__block_img">
+                        <img src="./img/about_truck-img.png" alt="" class="statistics__block_img">
+                        <div class="statistics__block">
+                            <p class="statistics__block-heading">1500</p>
+                            <p class="statistics__block-text">сотрудников</p>
+                            <p class="statistics__block-span">профессионалов</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <img src="./img/maps.png" alt="img" class="map" id="map">
+
+            <footer class="footer" id="footer">
+                <div class="footer__container">
+                    <a href="/" class="footer__logo-link">
+                        <img src="./img/footer_logo.png" alt="icon" class="footer__logo">
+                    </a>
+                    
+                    <div class="footer__address">
+                        <p class="footer__address-postal">123456, Санкт-Петербург, Невский пр-кт 127</p>
+                        <p class="footer__address-email">sales@log.ru</p>
+                    </div>
+                    <div class="footer__phones">
+                        <p class="footer__phone-number">+7 (812) 344-56-65</p>
+                        <p class="footer__phone-number">+7 (812) 355-56-65</p>
+                    </div>
+                    <p class="designer">Разработано - D-E-N.ru</p>
+                </div>
+            </footer>
+
+		</div>
+</body>
+</html>
